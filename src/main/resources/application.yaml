@@ -2,24 +2,24 @@
 spring:
   application:
     name: tiktok-demo
-#  security:
-#    oauth2:
-#      client:
-#        registration:
-#          tiktok:
-#            client-id: awwmymy5o6i37zcr   # TikTok client_key
-#            client-secret: your_client_secret_here
-#            client-name: TikTok
-#            authorization-grant-type: authorization_code
-#            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
-#            scope:
-#              - user.info.basic
-#        provider:
-#          tiktok:
-#            authorization-uri: https://www.tiktok.com/v2/auth/authorize/
-#            token-uri: https://open.tiktokapis.com/v2/oauth/token/
-#            user-info-uri: https://open.tiktokapis.com/v2/user/info/
-#            user-name-attribute: open_id
+  #  security:
+  #    oauth2:
+  #      client:
+  #        registration:
+  #          tiktok:
+  #            client-id: awwmymy5o6i37zcr   # TikTok client_key
+  #            client-secret: your_client_secret_here
+  #            client-name: TikTok
+  #            authorization-grant-type: authorization_code
+  #            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+  #            scope:
+  #              - user.info.basic
+  #        provider:
+  #          tiktok:
+  #            authorization-uri: https://www.tiktok.com/v2/auth/authorize/
+  #            token-uri: https://open.tiktokapis.com/v2/oauth/token/
+  #            user-info-uri: https://open.tiktokapis.com/v2/user/info/
+  #            user-name-attribute: open_id
   security:
     oauth2:
       client:
@@ -27,7 +27,7 @@ spring:
           tiktok:
             client-id: sbaw19mok2vp4bxwwh
             client-secret: UigVW6WXcml5wOoTadjW2hBxrqviq3vq
-#            scope: user.info.basic,video.list,video.comment,video.comment.reply
+            #            scope: user.info.basic,video.list,video.comment,video.comment.reply
             client-authentication-method: none
             scope: user.info.basic
             authorization-grant-type: authorization_code
@@ -44,7 +44,7 @@ spring:
 #          tiktok:
 #            client-id: sbaw19mok2vp4bxwwh
 #            client-secret: UigVW6WXcml5wOoTadjW2hBxrqviq3vq
-#            client-authentication-method: none # TikTok yêu c?u PKCE, client_secret không dùng frontend
+#            client-authentication-method: none # TikTok yÃªu cáº§u PKCE, client_secret khÃ´ng dÃ¹ng frontend
 #            authorization-grant-type: authorization_code
 #            redirect-uri: "{baseUrl}/login/oauth2/code/tiktok"
 #            scope:
